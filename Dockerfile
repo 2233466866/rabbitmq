@@ -15,6 +15,6 @@ chown -R rabbitmq:rabbitmq /data/rabbitmq;\
 \cp advanced.config /etc/rabbitmq/advanced.config;\
 \cp rabbitmq-server.service /usr/lib/systemd/system/rabbitmq-server.service
 # 环境变量
-ENV PATH $PATH
+ENV LC_ALL=en_US.UTF-8
 # 创建卷
 VOLUME ["/data/rabbitmq"]
