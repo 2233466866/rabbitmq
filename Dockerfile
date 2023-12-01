@@ -13,8 +13,7 @@ chown -R rabbitmq:rabbitmq /data/rabbitmq;\
 \cp rabbitmq-env.conf /etc/rabbitmq/rabbitmq-env.conf;\
 \cp rabbitmq.config /etc/rabbitmq/rabbitmq.config;\
 \cp advanced.config /etc/rabbitmq/advanced.config;\
-\cp rabbitmq-server.service /usr/lib/systemd/system/rabbitmq-server.service
-# 环境变量
+\cp rabbitmq-server.service /usr/lib/systemd/system/rabbitmq-server.service;\
+rm -rf /root/*
 ENV LC_ALL en_US.UTF-8
-# 创建卷
 VOLUME ["/data/rabbitmq"]
