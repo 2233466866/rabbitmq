@@ -9,8 +9,8 @@ docker pull 2233466866/rabbitmq
 
 ### 获取镜像方式2：自己构建
 ```
-git clone https://github.com/2233466866/book_amqp.git
-cd book_amqp
+git clone https://github.com/2233466866/rabbitmq.git
+cd rabbitmq
 docker build -t [镜像] .
 ```
 
